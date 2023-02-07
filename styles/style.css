@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-V.ttf")
+}
+
+html{
+	width: 100%;
+}
+
+body{
+	font-family: "Inter";
+	margin-left: auto;
+	margin-right: auto;
+	width: 1360px;
+}
+
+header{
+		
+}
+
+header img{
+	position: absolute;
+}
+
+header ul{
+	list-style: none;
+}
+
+header a{
+	outline: none;
+	color: black;
+	text-decoration: none;
+}
+
+
+.communication{
+	display: flex;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+}
+
+.location{
+	display: flex;
+	margin-left: 80px;
+	margin-top: 45px;
+}
+
+.markerMap{
+	margin-top: 0px;
+	margin-left: -25px;
+}
+
+.selectImg{
+	margin-top: 5px;
+	margin-left: 123px;
+}
+
+.selectCity{
+	margin-top: -15px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	text-align: center;
+	border: none;
+	background: transparent;
+	outline: none;
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+}
+
+.selectCity option{
+	background: transparent;
+	border: none;
+	outline: none;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+}
+
+.phoneComp{
+	display: flex;
+	position: absolute;
+	margin-left: 295px;
+	padding-top: 35px;
+}
+
+.phoneComp img{
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 10px;
+}
+
+.phoneComp p{
+	margin-top: 12px;
+	margin-left: 3px;
+}
+
+.labelHead{
+	position: absolute;
+	margin-left: 610px;
+	margin-top: 15px;
+}
+
+.auth{
+	display: flex;
+	margin-left: 835px;
+	padding-top: 30px;
+}
+
+.constUser{
+	margin-top: 0px;
+	padding-right: 7px;
+}
+
+.constUser:hover{
+	text-shadow: 0px 0px 5px rgb(0,0,0,0.5);
+}
+
+.firstUser{
+	margin-top: 0px;
+	padding-left: 7px;
+}
+
+.firstUser:hover{
+	text-shadow: 0px 0px 5px rgb(0,0,0,0.5);
+}
+
+.collection{
+	display: flex;
+	padding-top: 45px;
+	margin-left: 70px;
+}
+
+.liked:hover{
+	width: 15px;
+	height: 15px;
+	background: rgb(0, 0, 0, 0.3);
+	border-radius: 30%;
+	animation: 2s liked infinite;
+	animation-delay: 1s;
+	box-shadow: 0px 0px 5px 5px rgb(0,0,0,0.3);
+}
+
+@keyframes liked{
+	20%{
+		transform: rotate(-15deg);
+	}
+	40%{
+		transform: rotate(45deg);
+	}
+	60%{
+		transform: rotate(-15deg);
+	}
+	80%{
+		transform: rotate(45deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+
+.statistic{
+	margin-left: 40px;
+	width: 15px;
+	height: 15px;
+}
+
+.firstVectorStat{
+	height: 12px;
+	width: 3px;
+	margin-top: 3px;
+}
+
+.secondVectorStat{
+	margin-left: 10px;
+}
+
+.thridVectorStat{
+	margin-left: 5px;
+	 height: 10px;
+	 width: 3px;
+	 margin-top: 5px;
+}
+
+.statistic:hover{
+	background: rgb(0, 0, 0, 0.3);
+	border-radius: 30%;
+	box-shadow: 0px 0px 5px 5px rgb(0,0,0,0.3);
+}
+
+
+.basket{
+	width: 15px;
+	height: 15px;
+	margin-left: 30px;
+}
+
+.basket:hover{
+	transform: scale(1.2);
+	background: rgb(0, 0, 0, 0.3);
+	border-radius: 30%;
+	box-shadow: 0px 0px 5px 5px rgb(0,0,0,0.3);
+}
+
+.liked{
+	width: 15px;
+	height: 15px;
+}
+
+.liked p{
+	position: absolute;
+	margin-left: 12px;
+	margin-top: -7px;
+	width: 19px;
+	height: 19px;
+	background: url("../img/header/likeQuantity.png") no-repeat;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.navigatePage{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 55px;
+	width: 1300px;
+	height: 60px;
+	background: #F8F8F8;
+}
+
+.choices ul{
+	display: flex;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 100%;
+
+}
+
+.choices li{
+	padding: 10px;
+	padding-right: 50px;
+}
+
+.searchPage{
+	display: flex;
+	margin-top: 0px;
+	margin-left: 80px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+}
+
+.searchPage input{
+	outline: none;
+	height: 30px;
+	border: none;
+	background: transparent;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	padding-left: 35px;
+}
+
+.searchPage img{
+	margin-top: 7px;
+	margin-left: 5px;
+}
