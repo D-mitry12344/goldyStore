@@ -447,7 +447,7 @@ header a{
 
 .popularCategory div:nth-child(6) img {
 	padding-top: 40px;
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 .popularCategory div:nth-child(1) p {
@@ -476,7 +476,7 @@ header a{
 }
 
 .popularCategory div:nth-child(6) p {
-	margin-top: 30px;
+	margin-top: 32px;
 	margin-left: 5px;
 }
 
@@ -520,7 +520,7 @@ header a{
 
 .optionsProducts{
 	display: flex;
-	margin-top: 20px;
+	margin-top: 25px;
 	margin-left: -5px;
 }
 
@@ -528,20 +528,33 @@ header a{
 	position: absolute;
 	font-weight: 500;
 	font-size: 13px;
+	width: 40px;
+	height: 16px;
+	padding-left: 10px;
+	padding-top: 5px;
 	line-height: 100%;
-	margin-left: 242px;
-	margin-top: 268px;
+	margin-left: 232px;
+	margin-top: 262px;
 	color: white;
+	border-radius: 15px;
+	background: #E24B33;
 }
 
 .optionsProducts .sales{
 	position: absolute;
-	margin-left: 27px;
-	padding-top: 8px;
+	width: 38px;
+	height: 16px;
+	margin-top: 15px;
+	margin-left: 20px;
+	padding-left: 12px;
+	padding-top: 5px;
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 100%;
+	background: #5B8A8F;
+	border-radius: 15px;
 	color: white;
+	z-index: 1;
 }
 
 .optionsProducts .priceOption{
@@ -549,7 +562,7 @@ header a{
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 100%;
-	margin-top: 250px;
+	margin-top: 248px;
 	margin-left: 22px;
 }
 
@@ -559,8 +572,14 @@ header a{
 	line-height: 100%;
 	margin-top: 12px;
 	margin-left: 2px;
+	padding-top: 10px;
+	padding-left: 5px;
 	text-decoration-line: line-through;
 	color: #8F8F8F;
+}
+
+.option-four .priceOption{
+	margin-left: 25px;
 }
 
 .optionsProducts .infoOption{
@@ -572,8 +591,12 @@ header a{
 	line-height: 160%;
 }
 
-.option-two img:nth-child(3) , .option-three img:nth-child(3) , .option-four img:nth-child(3) ,
-.option-two img:nth-child(5) , .option-three img:nth-child(5) , .option-four img:nth-child(5){
+.option-four .infoOption{
+	margin-left: 25px;
+}
+
+.option-two .sales , .option-three .sales , .option-four .sales ,
+.option-two .discount , .option-three .discount , .option-four .discount{
 	display: none;
 }
 
@@ -595,27 +618,38 @@ header a{
 
 .optionDiv img:nth-child(2) {
 	margin-top: 20px;
-	margin-left: 259px;
+	margin-left: 265px;
+}
+
+.option-four img:nth-child(2) {
+	margin-top: 20px;
+	margin-left: 268px;
 }
 
 .optionDiv img:nth-child(5) {
-	margin-top: 15px;
-	margin-left: 15px;
+	margin-top: 52px;
+	margin-left: 265px;
+
 }
 
-.optionDiv img:nth-child(7) {
-	margin-top: 50px;
-	margin-left: 259px;
+.option-four img:nth-child(5) {
+	margin-top: 52px;
+	margin-left: 268px;
 }
 
-.optionDiv img:nth-child(8) {
+.optionDiv img:nth-child(6) {
 	margin-top: 40px;
-	margin-left: 50px;
+	margin-left: 52px;
 }
 
-.priceOption p:nth-child(2){
-	padding-top: 10px;
-	padding-left: 5px;
+.option-three img:nth-child(6) {
+	margin-top: 40px;
+	margin-left: 53px;
+}
+
+.option-four img:nth-child(6) {
+	margin-top: 40px;
+	margin-left: 55px;
 }
 
 .selectImgOption{
@@ -1155,4 +1189,75 @@ header a{
 	border: none;
 	background: url("../img/product/send.png") no-repeat;
 	background-position: 5px 4px;
+}
+
+.blockArticles{
+	margin-top: 678px;
+	margin-left: 53px;
+}
+
+.blockArticles h1{
+	font-family: 'Prata';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 100%;
+	color: #303030;
+}
+
+.btn-next-all{
+	position: absolute;
+	margin-left: 1170px;
+	margin-top: -55px;
+}
+
+.btn-next-all a{
+	outline: none;
+	text-decoration: none;
+}
+
+.btn-next-all button{
+	display: flex;
+	width: 200px;
+	background: url("../img/article/arrow.png") no-repeat;
+	background-position: 105px 15px;
+	border: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	color: #303030;
+	text-transform: uppercase;
+}
+
+.steckArticle{
+	display: flex;
+	margin-left: -10px;
+	margin-top: 30px;
+}
+
+.article{
+	margin: 10px;
+}
+
+.article p:nth-child(2){
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	color: #8F8F8F;
+}
+
+.article p:nth-child(3){
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	color: #303030;
+}
+
+
+.article p:nth-child(4){
+	margin-top: -3px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	color: #303030;
 }
