@@ -84,6 +84,10 @@ header a{
 	line-height: 100%;
 }
 
+.location:hover{
+	opacity: 0.5;
+}
+
 .phoneComp{
 	display: flex;
 	position: absolute;
@@ -100,6 +104,10 @@ header a{
 .phoneComp p{
 	margin-top: 12px;
 	margin-left: 3px;
+}
+
+.phoneComp:hover{
+	opacity: 0.5;
 }
 
 .labelHead{
@@ -120,7 +128,7 @@ header a{
 }
 
 .constUser:hover{
-	text-shadow: 0px 0px 5px rgb(0,0,0,0.5);
+	opacity: 0.3;
 }
 
 .firstUser{
@@ -129,7 +137,7 @@ header a{
 }
 
 .firstUser:hover{
-	text-shadow: 0px 0px 5px rgb(0,0,0,0.5);
+	opacity: 0.3;
 }
 
 .collection{
@@ -141,11 +149,9 @@ header a{
 .liked:hover{
 	width: 15px;
 	height: 15px;
-	background: rgb(0, 0, 0, 0.3);
-	border-radius: 30%;
+	transform: scale(1.2);
 	animation: 2s liked infinite;
-	animation-delay: 1s;
-	box-shadow: 0px 0px 5px 5px rgb(0,0,0,0.3);
+	animation-delay: 0.3s;
 }
 
 @keyframes liked{
@@ -191,23 +197,26 @@ header a{
 }
 
 .statistic:hover{
-	background: rgb(0, 0, 0, 0.3);
-	border-radius: 30%;
-	box-shadow: 0px 0px 5px 5px rgb(0,0,0,0.3);
+	transform: scale(1.2);
 }
 
 
 .basket{
-	width: 15px;
-	height: 15px;
+	width: 25px;
+	height: 26px;
+	padding-left: 7px;
+	padding-top: 6px;
+	margin-top: -7px;
 	margin-left: 30px;
+	border-radius: 2px;
 }
 
 .basket:hover{
-	transform: scale(1.2);
-	background: rgb(0, 0, 0, 0.3);
-	border-radius: 30%;
-	box-shadow: 0px 0px 5px 5px rgb(0,0,0,0.3);
+	background: #f8f8f8;
+}
+
+.basket:active{
+	background: #e8e7e7;
 }
 
 .liked{
@@ -252,6 +261,10 @@ header a{
 .choices li{
 	padding: 10px;
 	padding-right: 50px;
+}
+
+.choices li:hover{
+	opacity: 0.5;
 }
 
 .searchPage{
@@ -310,6 +323,7 @@ header a{
 }
 
 .positionProduct{
+	cursor: pointer;
 	margin: 3px;
 	width: 8px;
 	height: 8px;
@@ -342,6 +356,10 @@ header a{
 
 .bannerProduct button:hover{
 	background: #505050;
+}
+
+.bannerProduct button:active{
+	background: black;
 }
 
 .bannerProduct h1{
@@ -391,6 +409,18 @@ header a{
 	background:#F5F5F5 url("../img/banner/arrow.png") no-repeat center;
 }
 
+.btn-return:active{
+	background:#F5F5F5 url("../img/banner/arrow.png") no-repeat;
+	background-position: 30px 21px;
+	transition: 0.3s;
+}
+
+.btn-next:active{
+	transition: 0.3s;
+	background:#F5F5F5 url("../img/banner/arrow.png") no-repeat;
+	background-position: 30px 21px;
+}
+
 .popular{
 	margin-top: 120px;
 }
@@ -418,6 +448,11 @@ header a{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 100%;
+}
+
+.popularCategory div img:hover{
+	transform: scale(1.2);
+	transition: 0.3s;
 }
 
 .popularCategory div:nth-child(1) img{
@@ -506,6 +541,15 @@ header a{
 	line-height: 100%;
 	margin: 1px;
 	margin-top: -10px;
+}
+
+.btn-category-cheap button:hover{
+	background: #dddddd;
+}
+
+.btn-category-cheap button:active{
+	background: #303030;
+	color: white;
 }
 
 .btn-category-cheap button:nth-child(3){
@@ -661,6 +705,7 @@ header a{
 }
 
 .positionImgOption{
+	cursor: pointer;
 	width: 8px;
 	height: 8px;
 	background: #FFFFFF;
@@ -701,6 +746,12 @@ header a{
 
 .btn-nav-cheap button:hover{
 	background:#f8f8f8 url("../img/banner/arrow.png") no-repeat center;
+}
+
+.btn-nav-cheap button:hover{
+	background:#f8f8f8 url("../img/banner/arrow.png") no-repeat;
+	background-position: 30px 22px;
+	transition: 0.3s;
 }
 
 .discountCategory{
@@ -813,6 +864,7 @@ header a{
 }
 
 .btn-nav-products button:nth-child(1){
+	z-index: 2;
 	position: absolute;
 	margin-top: 27px;
 	width: 54px;
@@ -825,6 +877,7 @@ header a{
 }
 
 .btn-nav-products button:nth-child(2){
+	z-index: 2;
 	position: absolute;
 	margin-top: 27px;
 	margin-left: 1047px;
@@ -835,7 +888,18 @@ header a{
 	background:white url("../img/banner/arrow.png") no-repeat center;
 }
 
+.btn-nav-products button:hover{
+	background:#f0f0f0 url("../img/banner/arrow.png") no-repeat center ;
+}
+
+.btn-nav-products button:active{
+	background:#f0f0f0 url("../img/banner/arrow.png") no-repeat ;
+	background-position: 30px 21px;
+	transition: 0.3s;
+}
+
 .itself-product button{
+	cursor: pointer;
 	width: 10px;
 	height: 15px;
 	border: none;
@@ -845,6 +909,7 @@ header a{
 	margin-left: 325px;
 	background: url("../img/product/btn-itself.png") no-repeat center;
 }
+
 
 .itself-product button:nth-child(6) {
 	width: 10px;
@@ -856,6 +921,21 @@ header a{
 	transform: rotate(180deg);
 	background: url("../img/product/btn-itself.png") no-repeat center;
 }
+
+.itself-product button:hover{
+	transform: scale(1.2);
+	box-shadow:inset 0px 0px 7px 0px #e5e5e5;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.itself-product button:nth-child(6):hover{
+	transform: scale(1.4) rotate(180deg);
+	box-shadow:inset 0px 0px 7px 0px #e5e5e5;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
 .itself-product img{
 	position: absolute;
 	margin-left: -199px;
@@ -1042,6 +1122,10 @@ header a{
 	display: flex;
 }
 
+.color-btn button{
+	cursor: pointer;
+}
+
 .color-btn button:nth-child(1){
 	background: #D9D9D9;
 }
@@ -1057,6 +1141,18 @@ header a{
 .color-btn button:nth-child(4){
 	background: #A7E492;
 }
+
+.color-btn button:hover{
+	border: 3px solid #f4f4f4;
+	transform: scale(1.2);
+	transition: 0.2s;
+
+}
+
+.color-btn button:active{
+	border: 3px solid #303030;
+}
+
 
 .sizeProduct p{
 	font-weight: 600;
@@ -1089,6 +1185,7 @@ header a{
 }
 
 .btn-size-product button{
+	cursor: pointer;
 	width: 50px;
 	height: 32px;
 	margin-right: 10px;
@@ -1100,6 +1197,16 @@ header a{
 	text-transform: uppercase;
 	color: #303030;
 	border: 1px solid #DADADA;
+}
+
+.btn-size-product button:hover{
+	border: 1px solid #303030;
+}
+
+.btn-size-product button:active{
+	background: #303030;
+	color: white;
+	transition: 0.2s;
 }
 
 .productAction{
@@ -1123,6 +1230,14 @@ header a{
 	text-transform: uppercase;
 }
 
+.btn-in-bascet:hover{
+	background: #505050;
+}
+
+.btn-in-bascet:active{
+	background: black;
+}
+
 .btn-in-pay{
 	margin-top: 10px;
 	width: 400px;
@@ -1137,6 +1252,20 @@ header a{
 	border: 1px solid #303030;
 }
 
+.btn-in-pay:hover{
+	background: #303030;
+	color: white;
+}
+
+.btn-in-pay:active{
+	color: white;
+	background: black;
+}
+
+.productAction button{
+	cursor: pointer;
+}
+
 .btn-save-product{
 	width: 105px;
 	height: 24px;
@@ -1149,6 +1278,10 @@ header a{
 	border: none;
 	background: url("../img/product/liked.png") no-repeat;
 	background-position: 5px 5px;
+}
+
+.productSave button{
+	cursor: pointer;
 }
 
 .productSave{
@@ -1191,9 +1324,17 @@ header a{
 	background-position: 5px 4px;
 }
 
+.productSave button:hover{
+	opacity: 0.5;
+}
+
 .blockArticles{
 	margin-top: 678px;
 	margin-left: 53px;
+}
+
+.blockArticles a{
+	text-decoration: none;
 }
 
 .blockArticles h1{
@@ -1206,9 +1347,14 @@ header a{
 }
 
 .btn-next-all{
+	cursor: pointer;
 	position: absolute;
 	margin-left: 1170px;
 	margin-top: -55px;
+}
+
+.btn-next-all:hover{
+	opacity: 0.5;
 }
 
 .btn-next-all a{
