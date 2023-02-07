@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-V.ttf")
+  src: url("../fonts/Inter.ttf");
+}
+
+@font-face {
+  font-family: "Prata";
+  src: url("../fonts/Prata-Regular.ttf");
 }
 
 html{
@@ -272,4 +277,95 @@ header a{
 .searchPage img{
 	margin-top: 7px;
 	margin-left: 5px;
+}
+
+.banner{
+	width: 1300px;
+	height: 560px;
+	margin-left: 55px;
+	margin-top: 20px;
+	font-family: "Inter";
+	background:#f8f8f8 url("../img/banner/vectorBan.png") no-repeat;
+	background-position: 0px 20px;
+}
+
+.banner button{
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	border: 1px solid #303030;
+	background:white url("../img/banner/arrow.png") no-repeat center;
+}
+
+.bannerProduct{
+	position: absolute;
+	margin-top: 35px;
+	margin-left: -55px;
+}
+
+.bannerProduct button{
+	margin-top: 12px;
+	background: #303030;
+	border: none;
+	border-radius: 0;
+	color: white;
+	width: 200px;
+	height: 54px;
+	margin-left: 180px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+}
+
+.bannerProduct button:hover{
+	background: #505050;
+}
+
+.bannerProduct h1{
+	margin-top: 30px;
+	margin-left: 179px;
+	font-family: "Prata";
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 100%;
+}
+
+.bannerProduct p{
+	margin-top: 143px;
+	margin-left: 180px;
+	font-family: "Prata";
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 100%;
+}
+
+.bannerProduct img{
+	margin-top: -310px;
+	margin-left: 770px;
+	position: absolute;
+}
+
+.btn-next , .btn-return{
+	position: absolute;
+	top: 435px;
+	z-index: 2;
+}
+
+.btn-next{
+	margin-left: 1220px;
+}
+
+.btn-return{
+	margin-left: 20px;
+	transform: rotate(180deg);
+}
+
+.btn-next:hover{
+	background:#F5F5F5 url("../img/banner/arrow.png") no-repeat center;
+}
+
+.btn-return:hover{
+	background:#F5F5F5 url("../img/banner/arrow.png") no-repeat center;
 }
