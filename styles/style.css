@@ -756,7 +756,7 @@ header a{
 
 .discountCategory{
 	display: flex;
-	margin-top: 105px;
+	margin-top: 100px;
 	margin-left: 45px;
 }
 
@@ -1277,6 +1277,20 @@ header a{
 	color: #303030;
 	border: none;
 	background: url("../img/product/liked.png") no-repeat;
+	background-position: 5px 5px;
+}
+
+.btn-save-product-click{
+	width: 105px;
+	height: 24px;
+	margin-left: -10px;
+	padding-left: 35px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 100%;
+	color: #303030;
+	border: none;
+	background: url("../img/likes.png") no-repeat;
 	background-position: 5px 5px;
 }
 
