@@ -1,7 +1,7 @@
 let likes = document.querySelectorAll("#like")
 let steckLikes = document.querySelector("#steckLike");
 steckLikes.style.background="none";
-let p =0;
+let p = 0;
 likes.forEach(function(like) {
   like.addEventListener('click', function (event) {
   	if(like === likes[4]){
@@ -23,6 +23,7 @@ likes.forEach(function(like) {
 			p++;
 		}
 	}
+
 	if(p === "0"){
 		steckLikes.style.background="none"
 	}else{
