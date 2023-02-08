@@ -1,5 +1,6 @@
 let likes = document.querySelectorAll("#like")
-let steckLikes = document.querySelector("#steckLike")
+let steckLikes = document.querySelector("#steckLike");
+steckLikes.style.background="none";
 let p =0;
 likes.forEach(function(like) {
   like.addEventListener('click', function (event) {
@@ -22,7 +23,11 @@ likes.forEach(function(like) {
 			p++;
 		}
 	}
-	steckLikes.textContent = p;
+	if(p === "0"){
+		steckLikes.style.background="none"
+	}else{
+		steckLikes.style.background = "#E46942"
+		steckLikes.textContent = p;
+  }
   	})
-
 });

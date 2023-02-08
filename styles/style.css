@@ -229,8 +229,9 @@ header a{
 	margin-left: 12px;
 	margin-top: -7px;
 	width: 19px;
-	height: 19px;
-	background: url("../img/header/likeQuantity.png") no-repeat;
+	height: 14px;
+	background: #E46942;
+	border-radius: 50%;
 	font-weight: 700;
 	font-size: 10px;
 	line-height: 100%;
@@ -1266,6 +1267,10 @@ header a{
 	cursor: pointer;
 }
 
+#like{
+	cursor: pointer;
+}
+
 .btn-save-product{
 	width: 105px;
 	height: 24px;
@@ -1421,3 +1426,72 @@ header a{
 	line-height: 100%;
 	color: #303030;
 }
+
+.blockInfoProduct{
+	width:305px;
+	height:110px;
+	background:	white;
+	margin-top: 0px;
+	margin-left: 0px;
+ 	position:absolute;
+ 	border: 1px solid #F0F0F0;
+ 	border-top: none;
+	z-index:10;
+}
+
+.blockInfoProduct select{
+	width: 262px;
+	height: 40px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
+	color: #303030;
+	background: #f0f0f0;
+	margin-left: 22px;
+	margin-top: 10px;
+	outline: none;
+	border: none;
+	padding: 5px 35px 5px 5px;
+	-webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+
+}
+
+#eye{
+	opacity: 0.7;
+}
+
+#eye:hover{
+	opacity: 1;
+	animation:1.5s eye infinite ;
+	animation-delay: 0.1s;
+}
+
+@keyframes eye{
+	20%{
+		transform: rotate(0deg) scale(1.0);
+	}
+	40%{
+		transform: rotate(-15deg) scale(1.2);
+	}
+	60%{
+		transform: rotate(45deg) scale(1.2);
+	}
+	80%{
+		transform: rotate(-15deg) scale(1.1);
+	}
+	100%{
+		transform: rotate(0deg) scale(1.0);
+	}
+}
+
+.blockInfoProduct option{
+	border: none;
+	background: #f0f0f0;
+	width: 262px;
+	height: 100px;
+	padding: 5px 35px 5px 5px;
+}
+
