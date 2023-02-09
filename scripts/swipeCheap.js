@@ -1,14 +1,19 @@
 let masCategorys = document.querySelectorAll(".btn-category-cheap button");
 let optionsProducts = document.querySelector(".optionsProducts");
+let btnNavCheap = document.querySelectorAll(".btn-nav-cheap button");
+
 let firstCategory = document.createElement("div");
 let secondCategory = document.createElement("div");
 let thridCategory = document.createElement("div");
 let fourCategory = document.createElement("div");
 let value =0;
+
 firstCategory.innerHTML=divRings;
 secondCategory.innerHTML=divEarrings;
 thridCategory.innerHTML=divPendants;
 fourCategory.innerHTML=divClock;
+
+
 let masValueDiv=[firstCategory,secondCategory,thridCategory,fourCategory]
 masValueDiv.forEach(function(div){
 	div.style.display="flex"
@@ -22,6 +27,37 @@ masCategorys[0].style.background="#303030";
 masCategorys[0].style.color="white";
 masCategorys.forEach(function(Ctr){
 	let i = value;
+	btnNavCheap.forEach(function(btn){		
+		btn.addEventListener("click",function(event) {
+			if(btn == btnNavCheap[0]){
+				i--
+				if(i===-1){i=3;}
+				btnCtr(i)
+				masValueDiv.forEach(function(div){
+						div.style.display="flex"
+						div.classList.add('options');
+						optionsProducts.prepend(div);
+						if(div !== masValueDiv[i]){
+							div.style.display="none";
+					}
+				})
+			}
+			if(btn == btnNavCheap[1]){
+				i++
+				if(i === 4){i=0;}
+				btnCtr(i)
+				masValueDiv.forEach(function(div){
+					div.style.display="flex"
+					div.classList.add('options');
+					optionsProducts.prepend(div);
+					if(div !== masValueDiv[i]){
+						div.style.display="none";
+					}
+				})
+			}
+		})
+	})
+
 	Ctr.addEventListener("click", function(){
 		if(i===1){
 			masValueDiv[1].style.display="none";
@@ -245,7 +281,7 @@ radios.forEach(function(radio){
 	}
 })
 
-
+//radio click
 
 let a=0;
 let masimgProd = ['img/popular/clock.png','img/popular/pendants.png','img/popular/earrings.png','img/cheap/ring-1.png']
@@ -253,7 +289,6 @@ function forRadio(mas,radio,imgProd,option){
 	    if(a===2 || a=== 5 || a===8 || a===11){
 	    	if(a==2){
 	    		radio.addEventListener("click", function(){
-
 	    			mas[0].style.background="none";
 					mas[1].style.background="none";
 					mas[2].style.background="#303030";
@@ -384,3 +419,53 @@ masRadioThrid.forEach(function(radio){
 masRadioFour.forEach(function(radio){
 	forRadio(masRadioFour, radio,masimgProd[3],masDivFour)
 });
+
+//function BtnNav
+
+function btnCtr(i){
+	if(i===0){
+		masCategorys[1].style.background="#f0f0f0";
+		masCategorys[1].style.color="#303030";
+		masCategorys[2].style.background="#f0f0f0";
+		masCategorys[2].style.color="#303030";
+		masCategorys[3].style.background="#f0f0f0";
+		masCategorys[3].style.color="#303030";
+
+		masCategorys[0].style.background="#303030";
+		masCategorys[0].style.color="white";
+			
+	}
+	if(i===1){
+		masCategorys[3].style.background="#f0f0f0";
+		masCategorys[3].style.color="#303030";
+		masCategorys[2].style.background="#f0f0f0";
+		masCategorys[2].style.color="#303030";
+		masCategorys[0].style.background="#f0f0f0";
+		masCategorys[0].style.color="#303030";
+
+		masCategorys[1].style.background="#303030";
+		masCategorys[1].style.color="white";
+	}
+	if(i===2){
+		masCategorys[3].style.background="#f0f0f0";
+		masCategorys[3].style.color="#303030";
+		masCategorys[1].style.background="#f0f0f0";
+		masCategorys[1].style.color="#303030";
+		masCategorys[0].style.background="#f0f0f0";
+		masCategorys[0].style.color="#303030";
+
+		masCategorys[2].style.background="#303030";
+		masCategorys[2].style.color="white";
+	}
+	if(i===3){
+		masCategorys[1].style.background="#f0f0f0";
+		masCategorys[1].style.color="#303030";
+		masCategorys[2].style.background="#f0f0f0";
+		masCategorys[2].style.color="#303030";
+		masCategorys[0].style.background="#f0f0f0";
+		masCategorys[0].style.color="#303030";
+
+		masCategorys[3].style.background="#303030";
+		masCategorys[3].style.color="white";
+	}
+}

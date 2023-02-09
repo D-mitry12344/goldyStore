@@ -36,7 +36,9 @@ btnNext.addEventListener("click",function(event){
 						<p>Суперскидка до 60%</p>
 						<h1>НА БРИЛЛИАНТЫ</h1>
 						<img src="img/banner/ringBan.png">
-						<button>Подробнее</button>
+						<a href="#">
+							<button>Подробнее</button>
+						</a>
 						`;
 		bannerNew.classList.add('bannerProductNext');
 		bannerNew.classList.remove('bannerProductReturn');
@@ -55,7 +57,9 @@ btnNext.addEventListener("click",function(event){
 						<p>Суперскидка до 30%</p>
 						<h1>НА СЕРЬГИ</h1>
 						<img src="img/banner/earrings.png">
-						<button>Подробнее</button>
+						<a href="#">
+							<button>Подробнее</button>
+						</a>
 						`;
 		bannerNew.classList.add('bannerProductNext');
 		bannerNew.classList.remove('bannerProductReturn');
@@ -74,7 +78,9 @@ btnNext.addEventListener("click",function(event){
 						<p>Суперскидка до 80%</p>
 						<h1>НА ОЖЕРЕЛЬЕ</h1>
 						<img style="margin-top:-321px;" src="img/banner/pendats.png">
-						<button>Подробнее</button>
+						<a href="#">
+							<button>Подробнее</button>
+						</a>
 						`;
 		bannerNew.classList.remove('bannerProductReturn');
 		bannerProduct.classList.add('bannerProductRetn');
@@ -103,7 +109,9 @@ btnReturn.addEventListener("click",function(event){
 						<p>Суперскидка до 60%</p>
 						<h1>НА БРИЛЛИАНТЫ</h1>
 						<img src="img/banner/ringBan.png">
-						<button>Подробнее</button>
+						<a href="#">
+							<button>Подробнее</button>
+						</a>
 						`;
 		bannerNew.classList.add('bannerProductReturn');
 		bannerNew.classList.remove('bannerProductNext');
@@ -122,7 +130,9 @@ btnReturn.addEventListener("click",function(event){
 						<p>Суперскидка до 30%</p>
 						<h1>НА СЕРЬГИ</h1>
 						<img src="img/banner/earrings.png">
-						<button>Подробнее</button>
+						<a href="#">
+							<button>Подробнее</button>
+						</a>
 						`;
 		bannerNew.classList.add('bannerProductReturn');
 		bannerNew.classList.remove('bannerProductNext');
@@ -141,7 +151,9 @@ btnReturn.addEventListener("click",function(event){
 						<p>Суперскидка до 80%</p>
 						<h1>НА ОЖЕРЕЛЬЕ</h1>
 						<img style="margin-top:-321px;" src="img/banner/pendats.png">
-						<button>Подробнее</button>
+						<a href="#">
+							<button>Подробнее</button>
+						</a>
 						`;
 		bannerNew.classList.add('bannerProductReturn');
 		bannerNew.classList.remove('bannerProductNext');
