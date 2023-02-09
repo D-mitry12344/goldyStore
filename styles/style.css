@@ -548,11 +548,6 @@ header a{
 	background: #dddddd;
 }
 
-.btn-category-cheap button:active{
-	background: #303030;
-	color: white;
-}
-
 .btn-category-cheap button:nth-child(3){
 	width: 128px;
 	height: 40px;
@@ -726,16 +721,19 @@ header a{
 }
 
 .btn-nav-cheap button:nth-child(2) {
+	position: absolute;
 	margin-top: -10px;
 	width: 54px;
 	height: 54px;
+
 	border-radius: 50%;
 	border: 1px solid #303030;
 	background:white url("../img/banner/arrow.png") no-repeat center;
-	margin-left: 5px;
+	margin-left: 60px;
 }
 
 .btn-nav-cheap button:nth-child(1) {
+	position: absolute;
 	margin-top: -10px;
 	width: 54px;
 	height: 54px;

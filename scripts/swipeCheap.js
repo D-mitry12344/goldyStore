@@ -18,16 +18,10 @@ masValueDiv.forEach(function(div){
 		div.style.display="none";
 	}
 })
-
+masCategorys[0].style.background="#303030";
+masCategorys[0].style.color="white";
 masCategorys.forEach(function(Ctr){
 	let i = value;
-	/*Ctr.onmouseover = function(event) {
-				Ctr.style.background ="#f0f0f0";
-				Ctr.style.color="#303030";
-				if(event.fromElement.localName === 'button'){
-					Ctr.style.background ="#dddddd";
-				}
-			}*/
 	Ctr.addEventListener("click", function(){
 		if(i===1){
 			masValueDiv[1].style.display="none";
@@ -105,6 +99,8 @@ masCategorys.forEach(function(Ctr){
 	
 })
 
+//like function
+
 let steckLikes = document.querySelector("#steckLike");
 steckLikes.style.background="none";
 let p = 0;
@@ -138,6 +134,8 @@ likesCheap.forEach(function(like) {
 		}
 	})
 });
+
+//function eyes
 
 let eyes = document.querySelectorAll("#eye");
 let optionDivs = document.querySelectorAll(".optionDiv");
@@ -196,156 +194,193 @@ eyes.forEach(function(eye){
 })
 
 
+
+//check radio products
+
 let radios = document.querySelectorAll('.positionImgOption');
-let c=0;
-let l =3;
-let y=6;
-let u=9;
 let masRadioFirst = [];
 let masRadioSecond = [];
 let masRadioThrid = [];
-let masRadioFour=[]
-radios.forEach(function(radio){
-	if(radio === radios[l] && l<24){
-		masRadioSecond.push(radio,);
-		l=l+1;
+let masRadioFour=[];
+
+let masDivFirst = [];
+let masDivSecond = [];
+let masDivThrid = [];
+let masDivFour=[];
+let m=0;
+optionDivs.forEach(function(div){
+	if(m>=0 && m<=3){
+		masDivFirst.push(div)
 	};
-	if(radio === radios[y] && y<48){
-		y=y+1;
-		masRadioThrid.push(radio)
+	if(m>=4 && m<=7){
+		masDivSecond.push(div)
 	};
-	if(radio === radios[c] && c<12){
-		c=c+1;
-		masRadioFirst.push(radio)
+	if(m>=8 && m<=11){
+		masDivThrid.push(div)
 	};	
-	if(radio === radios[u] && u<36){
-		u=u+1;
+	if(m>=12 && m<=15){
+		masDivFour.push(div)
+	};
+	m++;
+	if(m===16){m=0}
+})
+
+let l =0;
+radios.forEach(function(radio){
+	if(l>=12 && l<24){
+		masRadioSecond.push(radio);
+	};
+	if(l>=36 && l<48){
 		masRadioFour.push(radio)
 	};
+	if(l>=0 && l<12){
+		masRadioFirst.push(radio)
+	};	
+	if(l>=24 && l<36){
+		masRadioThrid.push(radio)
+	};
+	l++;
+	if(l===48){
+		l=0;
+	}
 })
 
 
 
 let a=0;
-
-masRadioFirst.forEach(function(radio){
+let masimgProd = ['img/popular/clock.png','img/popular/pendants.png','img/popular/earrings.png','img/cheap/ring-1.png']
+function forRadio(mas,radio,imgProd,option){
 	    if(a===2 || a=== 5 || a===8 || a===11){
 	    	if(a==2){
 	    		radio.addEventListener("click", function(){
-	    			masRadioFirst[0].style.background="none";
-					masRadioFirst[1].style.background="none";
-					masRadioFirst[2].style.background="#303030";
-					optionDivs[0].childNodes[11].attributes.src.value="img/cheap/ring-2.png"
+
+	    			mas[0].style.background="none";
+					mas[1].style.background="none";
+					mas[2].style.background="#303030";
+					option[0].childNodes[11].attributes.src.value="img/cheap/ring-3.png";
+					option[0].childNodes[11].attributes.style.value=""
 	    	
+	    	})}
+	    	if(a==5){
+	    		radio.addEventListener("click", function(){
+	    			mas[3].style.background="none";
+					mas[4].style.background="none";
+					mas[5].style.background="#303030";
+					option[1].childNodes[11].attributes.src.value="img/cheap/ring-3.png";
+					option[1].childNodes[11].attributes.style.value=""
+	    	
+	    	})}
+	    	if(a==8){
+	    		radio.addEventListener("click", function(){
+	    			mas[6].style.background="none";
+					mas[7].style.background="none";
+					mas[8].style.background="#303030";
+					option[2].childNodes[11].attributes.src.value="img/cheap/ring-3.png";
+					option[2].childNodes[11].attributes.style.value=""
+	    	
+	    	})}
+	    	if(a==11){
+	    		radio.addEventListener("click", function(){
+	    			mas[9].style.background="none";
+					mas[10].style.background="none";
+					mas[11].style.background="#303030";
+					option[3].childNodes[11].attributes.src.value="img/cheap/ring-3.png";
+					option[3].childNodes[11].attributes.style.value=""
+	    	
+	    	})}
+	    }
+	    if(a===0 || a=== 3 || a===6 || a===9){
+	    	if(a==0){
+	    		radio.addEventListener("click", function(){
+	    			mas[2].style.background="none";
+					mas[1].style.background="none";
+					mas[0].style.background="#303030";
+					option[0].childNodes[11].attributes.src.value=imgProd;
+					option[0].childNodes[11].attributes.style.value="margin-left:100px;"
+	    	
+	    	})}
+	    	if(a==3){
+	    		radio.addEventListener("click", function(){
+	    			mas[5].style.background="none";
+					mas[4].style.background="none";
+					mas[3].style.background="#303030";
+					option[1].childNodes[11].attributes.src.value=imgProd;
+					option[1].childNodes[11].attributes.style.value="margin-left:100px;"
+	    	
+	    	})}
+	    	if(a==6){
+	    		radio.addEventListener("click", function(){
+	    			mas[8].style.background="none";
+					mas[7].style.background="none";
+					mas[6].style.background="#303030";
+					option[2].childNodes[11].attributes.src.value=imgProd;
+					option[2].childNodes[11].attributes.style.value="margin-left:100px;"
+	    	
+	    	})}
+	    	if(a==9){
+	    		radio.addEventListener("click", function(){
+	    			mas[11].style.background="none";
+					mas[10].style.background="none";
+					mas[9].style.background="#303030";
+					option[3].childNodes[11].attributes.src.value=imgProd;
+					option[3].childNodes[11].attributes.style.value="margin-left:100px;"
+	    	
+	    	})}
+	    }
+	    if(a===1 || a=== 4 || a===7 || a===10){
+	    	if(a==1){
+	    		radio.addEventListener("click", function(){
+	    			mas[0].style.background="none";
+					mas[2].style.background="none";
+					mas[1].style.background="#303030";
+					option[0].childNodes[11].attributes.src.value="img/cheap/ring-2.png";
+					option[0].childNodes[11].attributes.style.value=""
+	    	
+	    	})}
+	    	if(a==4){
+	    		radio.addEventListener("click", function(){
+	    			mas[3].style.background="none";
+					mas[5].style.background="none";
+					mas[4].style.background="#303030";
+					option[1].childNodes[11].attributes.src.value="img/cheap/ring-2.png";
+					option[1].childNodes[11].attributes.style.value=""
+	    	
+	    	})}
+	    	if(a==7){
+	    		radio.addEventListener("click", function(){
+	    			mas[6].style.background="none";
+					mas[8].style.background="none";
+					mas[7].style.background="#303030";
+					option[2].childNodes[11].attributes.src.value="img/cheap/ring-2.png";
+					option[2].childNodes[11].attributes.style.value=""
+	    	
+	    	})}
+	    	if(a==10){
+	    		radio.addEventListener("click", function(){
+	    			mas[9].style.background="none";
+					mas[11].style.background="none";
+					mas[10].style.background="#303030";
+					option[3].childNodes[11].attributes.src.value="img/cheap/ring-2.png";
+					option[3].childNodes[11].attributes.style.value=""
 	    	
 	    	})}
 	    }
 		a++;
 		if(a===12){a=0}	
-})
+}
 
+masRadioFirst.forEach(function(radio){
+	forRadio(masRadioFirst, radio,masimgProd[0],masDivFirst)
+});
 
 masRadioSecond.forEach(function(radio){
-	let i=0;
-	radio.addEventListener("click",function(event){
-		if(radio === masRadioSecond[i]){
-			console.log(i)
-			if(i === 1){
-				masRadioSecond[0].style.background="none";
-				masRadioSecond[2].style.background="none";
-				masRadioSecond[1].style.background="#303030";
-				optionDivs[1].childNodes[11].attributes[0].value= (i===1) ? "img/cheap/ring-3.png" : "img/cheap/ring-1.png";
-			}
-			if(i === 2){
-				masRadioSecond[0].style.background="none";
-				masRadioSecond[1].style.background="none";
-				masRadioSecond[2].style.background="#303030";
-				optionDivs[1].childNodes[11].attributes[0].value= (i===2) ? "img/cheap/ring-4.png" : "img/cheap/ring-1.png";
-			
-			}
-			if(i === 0){
-				masRadioSecond[1].style.background="none";
-				masRadioSecond[2].style.background="none";
-				masRadioSecond[0].style.background="#303030";
-				optionDivs[1].childNodes[11].attributes[0].value= (i===0) ? "img/cheap/ring-2.png" : "img/cheap/ring-1.png";
-			}
-			
-		}
-		i++;
-		if(i===3){
-			i=0;
-		}
-	})
-	
-})
-
+	forRadio(masRadioSecond, radio,masimgProd[1],masDivSecond)
+});
 
 masRadioThrid.forEach(function(radio){
-	let i=0;
-	radio.addEventListener("click",function(event){
-		if(radio === masRadioThrid[i]){
-			console.log(i)
-			if(i === 1){
-				masRadioThrid[0].style.background="none";
-				masRadioThrid[2].style.background="none";
-				masRadioThrid[1].style.background="#303030";
-				optionDivs[2].childNodes[11].attributes[0].value= (i===1) ? "img/cheap/ring-1.png" : "img/cheap/ring-1.png";
-			}
-			if(i === 2){
-				masRadioThrid[0].style.background="none";
-				masRadioThrid[1].style.background="none";
-				masRadioThrid[2].style.background="#303030";
-				optionDivs[2].childNodes[11].attributes[0].value= (i===2) ? "img/cheap/ring-4.png" : "img/cheap/ring-1.png";
-			
-			}
-			if(i === 0){
-				masRadioThrid[1].style.background="none";
-				masRadioThrid[2].style.background="none";
-				masRadioThrid[0].style.background="#303030";
-				optionDivs[2].childNodes[11].attributes[0].value= (i===0) ? "img/cheap/ring-3.png" : "img/cheap/ring-1.png";
-			}
-			
-		}
-		i++;
-		if(i===3){
-			i=0;
-		}
-	})
-	
-})
-
+	forRadio(masRadioThrid, radio,masimgProd[2],masDivThrid)
+});
 
 masRadioFour.forEach(function(radio){
-	let i=0;
-	radio.addEventListener("click",function(event){
-		if(radio === masRadioFour[i]){
-			console.log(i)
-			if(i === 1){
-				masRadioFour[0].style.background="none";
-				masRadioFour[2].style.background="none";
-				masRadioFour[1].style.background="#303030";
-				optionDivs[3].childNodes[11].attributes[0].value= (i===1) ? "img/cheap/ring-2.png" : "img/cheap/ring-1.png";
-			}
-			if(i === 2){
-				masRadioFour[0].style.background="none";
-				masRadioFour[1].style.background="none";
-				masRadioFour[2].style.background="#303030";
-				optionDivs[3].childNodes[11].attributes[0].value= (i===2) ? "img/cheap/ring-1.png" : "img/cheap/ring-1.png";
-			
-			}
-			if(i === 0){
-				masRadioFour[1].style.background="none";
-				masRadioFour[2].style.background="none";
-				masRadioFour[0].style.background="#303030";
-				optionDivs[3].childNodes[11].attributes[0].value= (i===0) ? "img/cheap/ring-4.png" : "img/cheap/ring-1.png";
-			}
-			
-		}
-		i++;
-		if(i===3){
-			i=0;
-		}
-	})
-	
-})
-
+	forRadio(masRadioFour, radio,masimgProd[3],masDivFour)
+});

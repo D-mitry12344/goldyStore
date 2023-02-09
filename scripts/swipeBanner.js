@@ -16,9 +16,7 @@ let masbanner = [
 	{
 		checked:false
 	},
-	
 	0
-	
 ]
 
 
