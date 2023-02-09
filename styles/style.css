@@ -1411,7 +1411,7 @@ header a{
 .btn-next-all button{
 	display: flex;
 	width: 200px;
-	background: url("../img/article/arrow.png") no-repeat;
+	background: url("../img/article/Arrow.png") no-repeat;
 	background-position: 105px 15px;
 	border: none;
 	font-weight: 500;
