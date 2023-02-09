@@ -1495,3 +1495,20 @@ header a{
 	padding: 5px 35px 5px 5px;
 }
 
+.bannerProductNext{
+	animation: 2s banner;
+}
+
+@keyframes banner{
+	from{ margin-left: -10px; }
+	to{margin-left: -55px;}
+}
+
+.bannerProductReturn{
+	animation: 2s bann;
+}
+
+@keyframes bann{
+	from{ margin-left: -90px; }
+	to{margin-left: -55px;}
+}
