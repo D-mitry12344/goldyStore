@@ -996,7 +996,7 @@ header a{
 
 .settingProduct{
 	position: absolute;
-	margin-left: 700px;
+	margin-left: 445px;
 	margin-top: 100px;
 }
 
@@ -1411,7 +1411,7 @@ header a{
 .btn-next-all button{
 	display: flex;
 	width: 200px;
-	background: url("../img/article/Arrow.png") no-repeat;
+	background: url("../img/article/next.png") no-repeat;
 	background-position: 105px 15px;
 	border: none;
 	font-weight: 500;
