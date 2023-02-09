@@ -1527,8 +1527,14 @@ header a{
 }
 
 @keyframes banner{
-	from{ margin-left: -10px; }
-	to{margin-left: -55px;}
+	from{
+	 	margin-left: -10px;
+		opacity: 0; 
+	}
+	to{
+		margin-left: -55px;
+		opacity: 1;
+	}
 }
 
 .bannerProductReturn{
@@ -1536,16 +1542,28 @@ header a{
 }
 
 @keyframes bann{
-	from{ margin-left: -90px; }
-	to{margin-left: -55px;}
+	from{
+	 	opacity: 0; 
+	 	margin-left: -90px;
+	}
+	to{
+		opacity: 1; 
+		margin-left: -55px;
+	}
 }
 
 
 .options{
-	animation: 3s cheap;
+	animation: 1.5s cheap;
 }
 
 @keyframes cheap{
-	from{ margin-left: -30px; }
-	to{margin-left: 0px;}
+	from{
+		opacity: 0; 
+	 	margin-left: -30px;
+	 }
+	to{
+		opacity: 1; 
+		margin-left: 0px;
+	}
 }
