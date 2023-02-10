@@ -17,7 +17,7 @@ html{
 
 body{
 	font-family: "Inter";
-	margin-left: 50px;
+	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
 }
@@ -813,7 +813,7 @@ header a{
 .optionCategory img{
 	position: absolute;
 	margin-left: 150px;
-	width: 10%;
+	width: 90px;
 }
 
 .optionCategory h2{
@@ -876,12 +876,12 @@ header a{
 }
 
 .disRingOne img{
-	margin-left: 183px;
+	margin-left: 160px;
 }
 
 .disRingTwo img{
  	margin-top: 40px;
- 	margin-left: 183px;
+ 	margin-left: 160px;
 }
 
 .disRingTwo h2{
