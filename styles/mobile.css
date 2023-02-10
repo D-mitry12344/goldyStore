@@ -1,12 +1,15 @@
-@font-face {
+	@font-face {
   font-family: "Inter";
   src: url("../fonts/Inter.ttf");
 }
-
 @font-face {
   font-family: "Prata";
   src: url("../fonts/Prata-Regular.ttf");
 }
+
+@media (min-width: 100px) and (max-width: 700px) {
+
+
 
 html{
 	width: 100%;
@@ -16,7 +19,7 @@ body{
 	font-family: "Inter";
 	margin-left: auto;
 	margin-right: auto;
-	width: 1360px;
+	width: 600px;
 }
 
 header{
@@ -47,7 +50,7 @@ header a{
 
 .location{
 	display: flex;
-	margin-left: 80px;
+	margin-left: 0px;
 	margin-top: 45px;
 }
 
@@ -62,7 +65,7 @@ header a{
 }
 
 .selectCity{
-	margin-top: -15px;
+	margin-top: 0px;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 100%;
@@ -91,7 +94,7 @@ header a{
 .phoneComp{
 	display: flex;
 	position: absolute;
-	margin-left: 295px;
+	margin-left: 485px;
 	padding-top: 35px;
 }
 
@@ -112,14 +115,15 @@ header a{
 
 .labelHead{
 	position: absolute;
-	margin-left: 610px;
+	margin-left: 200px;
 	margin-top: 15px;
 }
 
 .auth{
 	display: flex;
-	margin-left: 835px;
-	padding-top: 30px;
+	position: absolute;
+	margin-left: 280px;
+	padding-top: 90px;
 }
 
 .constUser{
@@ -142,8 +146,9 @@ header a{
 
 .collection{
 	display: flex;
-	padding-top: 45px;
-	margin-left: 70px;
+	position: absolute;
+	padding-top: 100px;
+	margin-left: 450px;
 }
 
 .liked:hover{
@@ -259,17 +264,21 @@ header a{
 
 .navigatePage{
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
-	margin-top: 20px;
-	margin-left: 55px;
-	width: 1300px;
-	height: 60px;
+	margin-top: 100px;
+	margin-left: 0px;
+	padding-left: 0px;
+	width: 600px;
+	height: 150px;
 	background: #F8F8F8;
 }
 
 .choices ul{
 	display: flex;
+	flex-wrap: wrap;
+	margin-top: -20px;
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 100%;
@@ -281,14 +290,23 @@ header a{
 	padding-right: 50px;
 }
 
+.choices li:nth-child(5){
+	margin-left: 70px;
+}
+
+.choices li:nth-child(1){
+	margin-left: 40px;
+}
+
 .choices li:hover{
 	opacity: 0.5;
 }
 
 .searchPage{
 	display: flex;
-	margin-top: 0px;
-	margin-left: 80px;
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 400px;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 100%;
@@ -311,13 +329,14 @@ header a{
 }
 
 .banner{
-	width: 1300px;
-	height: 560px;
-	margin-left: 55px;
+	width: 600px;
+	height: 450px;
+	margin-left: 0px;
 	margin-top: 20px;
 	font-family: "Inter";
-	background:#f8f8f8 url("../img/banner/vectorBan.png") no-repeat;
+	background:#f8f8f8 url("../img/banner/vectorBan.png") no-repeat ;
 	background-position: 0px 20px;
+	background-size: 60%;
 }
 
 .banner button{
@@ -331,8 +350,8 @@ header a{
 .selectProduct{
 	position: absolute;
 	z-index: 3;
-	margin-top: 525px;
-	margin-left: 625px;
+	margin-top: 430px;
+	margin-left: 280px;
 	display: flex;
 }
 
@@ -353,18 +372,18 @@ header a{
 .bannerProduct{
 	position: absolute;
 	margin-top: 35px;
-	margin-left: -55px;
+	margin-left: 0px;
 }
 
 .bannerProduct button{
-	margin-top: 12px;
+	margin-top: 150px;
 	background: #303030;
 	border: none;
 	border-radius: 0;
 	color: white;
-	width: 200px;
-	height: 54px;
-	margin-left: 180px;
+	width: 150px;
+	height: 44px;
+	margin-left: 60px;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -381,17 +400,18 @@ header a{
 }
 
 .bannerProduct h1{
-	margin-top: 30px;
-	margin-left: 179px;
+	margin-top: 0px;
+	margin-left: 60px;
+	width: 50px;
 	font-family: "Prata";
 	font-weight: 400;
-	font-size: 50px;
+	font-size: 40px;
 	line-height: 100%;
 }
 
 .bannerProduct p{
-	margin-top: 143px;
-	margin-left: 180px;
+	margin-top: 13px;
+	margin-left: 60px;
 	font-family: "Prata";
 	font-weight: 400;
 	font-size: 20px;
@@ -399,23 +419,24 @@ header a{
 }
 
 .bannerProduct img{
-	margin-top: -306px;
-  margin-left: 769px;
+	margin-top: -70px;
+  margin-left: 300px;
+  width: 100%;
 	position: absolute;
 }
 
 .btn-next , .btn-return{
 	position: absolute;
-	top: 435px;
+	top: 535px;
 	z-index: 2;
 }
 
 .btn-next{
-	margin-left: 1220px;
+	margin-left: 530px;
 }
 
 .btn-return{
-	margin-left: 20px;
+	margin-left: 5px;
 	transform: rotate(180deg);
 }
 
@@ -440,20 +461,21 @@ header a{
 }
 
 .popular{
-	margin-top: 120px;
+	margin-top: 80px;
 }
 
 .popular h1{
 	font-family: 'Prata';
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 100%;
-	margin-left: 53px;
+	margin-left: 120px;
 }
 
 .popularCategory{
 	display: flex;
-	margin-left: 40px;
+	flex-wrap: wrap;
+	margin-left: 80px;
 	margin-top: -5px;
 }
 
@@ -541,7 +563,7 @@ header a{
 
 .blockCheap{
 	margin-top: 110px;
-	margin-left: 50px;
+	margin-left: 80px;
 }
 
 .blockCheap h1{
@@ -551,11 +573,11 @@ header a{
 	font-size: 40px;
 	line-height: 100%;
 	padding-top: 3px;
-	padding-left: 3px;
+	padding-left: 80px;
 }
 
 .btn-category-cheap button{
-	width: 110px;
+	width: 80px;
 	height: 40px;
 	border-radius: 21px;
 	background: #F0F0F0;
@@ -583,8 +605,9 @@ header a{
 
 .optionsProducts{
 	display: flex;
+	width: 600px;
 	margin-top: 25px;
-	margin-left: -5px;
+	margin-left:40px;
 }
 
 .optionsProducts .discount{
@@ -738,8 +761,9 @@ header a{
 }
 
 .btn-nav-cheap{
+	display: none;
 	position: absolute;
-	margin-left: 1190px;
+	margin-left: 430px;
 	margin-top: -15px;
 }
 
@@ -778,13 +802,15 @@ header a{
 
 .discountCategory{
 	display: flex;
+	flex-wrap: wrap;
+	width: 600px;
 	margin-top: 100px;
-	margin-left: 45px;
+	margin-left: 40px;
 }
 
 .optionCategory{
-	width: 420px;
-	height: 290px;
+	width: 250px;
+	height: 220px;
 	margin: 10px;
 	background: #F8F8F8 url("../img/banner/vectorBan.png") no-repeat ;
 	background-position: -110px 0px;
@@ -793,17 +819,18 @@ header a{
 
 .optionCategory img{
 	position: absolute;
-	margin-left: 245px;
+	margin-left: 150px;
+	width: 10%;
 }
 
 .optionCategory h2{
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 15px;
 	line-height: 160%;
 	text-transform: uppercase;
 	color: #303030;
-	width: 220px;
-	margin-top: 70px;
+	width: 100px;
+	margin-top: 10px;
 	margin-left: 25px;
 }
 
@@ -824,14 +851,14 @@ header a{
 	line-height: 160%;
 	color: #ffffff;
 	margin-top: -3px;
-	margin-left: -75px;
+	margin-left: 5px;
 
 }
 
 .optionCategory .specDiscount{
 	display: flex;
 	margin-top: 23px;
-	margin-left: -2px;
+	margin-left: 0px;
 }
 
 .disEarring .specDiscount{
@@ -844,6 +871,7 @@ header a{
 	width: 194px;
 	height: 52px;
 	background:	#E24B33;
+	margin-top: 73px;
 	margin-left: 0px;
 }
 
@@ -851,20 +879,24 @@ header a{
 	width: 194px;
 	height: 52px;
 	background:	#E1A661;
-	margin-left: 2px;
+	margin-left: 0px;
 }
 
 .disRingOne img{
-	margin-left: 189px;
+	margin-left: 183px;
 }
 
 .disRingTwo img{
  	margin-top: 40px;
- 	margin-left: 200px;
+ 	margin-left: 183px;
 }
 
 .disRingTwo h2{
  	margin-left: 28px;
+}
+
+.disRingTwo{
+	margin-left: 140px;
 }
 
 .itself-product{
@@ -873,6 +905,7 @@ header a{
 
 .blockProduct{
 	display: flex;
+	width: 600px;
 	margin-top: 75px;
 }
 
@@ -882,7 +915,7 @@ header a{
 	font-weight: 400;
 	font-size: 40px;
 	line-height: 100%;
-	margin-left: 53px;
+	margin-left: 60px;
 }
 
 .btn-nav-products button:nth-child(1){
@@ -893,7 +926,7 @@ header a{
 	height: 54px;
 	border-radius: 50%;
 	border: 1px solid #303030;
-	margin-left: 985px;
+	margin-left: 155px;
 	background:white url("../img/banner/arrow.png") no-repeat center;
 	transform: rotate(180deg);
 }
@@ -902,7 +935,7 @@ header a{
 	z-index: 2;
 	position: absolute;
 	margin-top: 27px;
-	margin-left: 1047px;
+	margin-left: 217px;
 	width: 54px;
 	height: 54px;
 	border-radius: 50%;
@@ -928,7 +961,7 @@ header a{
 	position: absolute;
 	z-index: 2;
 	margin-top: 380px;
-	margin-left: 325px;
+	margin-left: 255px;
 	background: url("../img/product/btn-itself.png") no-repeat center;
 }
 
@@ -962,6 +995,7 @@ header a{
 	position: absolute;
 	margin-left: -199px;
 	margin-top: 115px;
+	width: 65%;
 	z-index: -1;
 }
 
@@ -996,8 +1030,8 @@ header a{
 
 .settingProduct{
 	position: absolute;
-	margin-left: 445px;
-	margin-top: 100px;
+	margin-left: -200px;
+	margin-top: 500px;
 }
 
 .rating{
@@ -1138,8 +1172,8 @@ header a{
 }
 
 .colorProduct button{
-	width: 32px;
-	height: 32px;
+	width: 25px;
+	height: 25px;
 	border: 3px solid #ffffff;
 	border-radius: 50%;
 	margin: 4px;
@@ -1214,8 +1248,8 @@ header a{
 
 .btn-size-product button{
 	cursor: pointer;
-	width: 50px;
-	height: 32px;
+	width: 40px;
+	height: 22px;
 	margin-right: 10px;
 	margin-left: 0px;
 	background: none;
@@ -1246,7 +1280,7 @@ header a{
 
 .btn-in-bascet{
 	margin-top: 42px;
-	width: 400px;
+	width: 300px;
 	height: 56px;
 	background: #303030;
 	color: white;
@@ -1268,7 +1302,7 @@ header a{
 
 .btn-in-pay{
 	margin-top: 10px;
-	width: 400px;
+	width: 300px;
 	height: 56px;
 	background: none;
 	color: #303030;
@@ -1332,7 +1366,7 @@ header a{
 
 .productSave{
 	position: absolute;
-	margin-left: 450px;
+	margin-left: 390px;
 	margin-top: -122px;
 	width: 130px;
 	display: flex;
@@ -1375,8 +1409,8 @@ header a{
 }
 
 .blockArticles{
-	margin-top: 678px;
-	margin-left: 53px;
+	margin-top: 1068px;
+	margin-left: 0px;
 }
 
 .blockArticles a{
@@ -1395,8 +1429,8 @@ header a{
 .btn-next-all{
 	cursor: pointer;
 	position: absolute;
-	margin-left: 1170px;
-	margin-top: -55px;
+	margin-left: 450px;
+	margin-top: -65px;
 }
 
 .btn-next-all:hover{
@@ -1423,12 +1457,19 @@ header a{
 
 .steckArticle{
 	display: flex;
-	margin-left: -10px;
+	flex-wrap: wrap;
+	margin-left: 70px;
 	margin-top: 30px;
 }
 
 .article{
+	width: 200px;
 	margin: 10px;
+}
+
+.article img{
+	width: 200px;
+	height: 250px;
 }
 
 .article p:nth-child(2){
@@ -1528,11 +1569,11 @@ header a{
 
 @keyframes banner{
 	from{
-	 	margin-left: -10px;
+	 	margin-left: 20px;
 		opacity: 0; 
 	}
 	to{
-		margin-left: -55px;
+		margin-left: 0px;
 		opacity: 1;
 	}
 }
@@ -1544,17 +1585,18 @@ header a{
 @keyframes bann{
 	from{
 	 	opacity: 0; 
-	 	margin-left: -90px;
+	 	margin-left: -20px;
 	}
 	to{
 		opacity: 1; 
-		margin-left: -55px;
+		margin-left: 0px;
 	}
 }
 
 
 .options{
 	animation: 1.5s cheap;
+	flex-wrap: wrap;
 }
 
 @keyframes cheap{
@@ -1566,6 +1608,6 @@ header a{
 		opacity: 1; 
 		margin-left: 0px;
 	}
-
 }
 
+}
