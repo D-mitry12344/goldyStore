@@ -11,10 +11,14 @@
 			<div class="communication">
 				<div class="location">
 					<img class="markerMap" src="img/header/markerMap.png">
-					<select class="selectCity">
-						<option>Санкт-Петербург</option>
-						<option>Москва</option>
-					</select>
+					<ul class="selectCity">
+						<li id="labelCity">Санкт-Петербург</li>
+						<ul class="selectOptions">
+							<li id="option">Санкт-Петербург</li>
+							<li id="option">Москва</li>
+							<li id="option">Новгород</li>
+						</ul>
+					</ul>
 					<img class="selectImg" src="img/header/select.png">
 				</div>
 				<div class="phoneComp">
@@ -244,4 +248,5 @@
 	<script src="scripts/swipeCheap.js"></script>
 	<script src="scripts/productsHit.js"></script>
 	<script src="scripts/swipeHit.js"></script>
+	<script src="scripts/select.js"></script>
 </html>

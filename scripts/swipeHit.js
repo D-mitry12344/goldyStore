@@ -58,14 +58,33 @@ btnHitNav.forEach(function(btn){
 				})
 				numberHit = k
 			}
+
 		})
+
 		
 })
 
-
-
-
-
+let divAnswer = document.createElement("div");
+function sayAnswer(){
+	divAnswer.innerHTML=`
+									<p class="questionP">
+											Также 
+											как существующая 
+											теория напрямую зависит от
+											экономической целесообразности принимаемых решений.
+									</p>
+								`
+	divAnswer.classList.add('divQuestion')
+	question.prepend(divAnswer)
+}
+let question = document.querySelector(".nameSize p:nth-child(2)")
+question.addEventListener("mouseover",function(){
+	setTimeout(sayAnswer, 1000)
+})
+question.addEventListener("mouseout",function(){
+	let answer = document.querySelector('.divQuestion')
+	question.removeChild(answer)
+})
 
 
 

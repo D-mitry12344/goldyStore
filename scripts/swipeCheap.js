@@ -178,22 +178,23 @@ let optionDivs = document.querySelectorAll(".optionDiv");
 let divfirst = document.createElement("div");
 let infoProduct = document.querySelector("#infoProduct")
 function createBlock(option){
-	divfirst.innerHTML=`
-							<select>
-								<option>Белое золото</option>
-								<option>Желтое золото</option>
-								<option>Серебро</option>
-							</select>
-							<select>
-								<option> Размер:16 </option>
-								<option> Размер:16.5 </option>
-								<option> Размер:17 </option>
-								<option> Размер:17.5 </option>
-								<option> Размер:18 </option>
-								<option> Размер:18.5 </option>
-								<option> Размер:19 </option>
-								<option> Размер:19.5 </option>
-							</select>
+	divfirst.innerHTML=`	<div id="selectCheapOne">
+								<label id="selectCheap">Золото</label>
+								<ul class="selectMat">
+									<li>Белое золото</li>
+									<li>Золото</li>
+									<li>Серебро</li>
+								</ul>
+							</div>
+							<div id="selectCheapTwo">
+								<label id="selectCheapSize"> Размер:19.5 </label>
+								<ul class="selectSize">
+									<li> 16 </li>
+									<li> 17 </li>
+									<li> 19 </li>
+									<li> 19.5 </li>					
+								</ul>
+							</div>
 						
 							`;
 	divfirst.classList.add('blockInfoProduct');
@@ -221,6 +222,42 @@ eyes.forEach(function(eye){
 					}
 				
 				})
+				let selectCheap = document.querySelector("#selectCheap");
+				let selectLabelSize = document.querySelector("#selectCheapSize");
+
+				let selectOne = document.querySelector('#selectCheapOne');
+				let selectTwo = document.querySelector('#selectCheapTwo');
+
+				let listMat = document.querySelectorAll(".selectMat li");
+				let selectMat = document.querySelector(".selectMat");
+
+				let listSize = document.querySelectorAll(".selectSize li");
+				let selectSize = document.querySelector(".selectSize");
+				selectOne.addEventListener("click", function(){
+					if(selectMat.style.display===''){
+						selectMat.style.display='block'
+					}else{
+						selectMat.style.display=''
+					}
+					listMat.forEach(function(lis){
+						lis.addEventListener("click",function(){
+						selectCheap.textContent = lis.textContent;
+						})
+					})
+				})
+
+				selectTwo.addEventListener("click", function(){
+					if(selectSize.style.display===''){
+						selectSize.style.display='block'
+					}else{
+						selectSize.style.display=''
+					}
+					listSize.forEach(function(lis){
+						lis.addEventListener("click",function(){
+						selectCheapSize.textContent = lis.textContent;
+						})
+					})
+				})
 			});
 		}
 	check++;
@@ -228,7 +265,6 @@ eyes.forEach(function(eye){
 		check=0;
 	}
 })
-
 
 
 //check radio products
