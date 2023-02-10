@@ -425,6 +425,11 @@ header a{
 	position: absolute;
 }
 
+
+.bannerProduct .bannerThree{
+	margin-top:-201px;
+}
+
 .btn-next , .btn-return{
 	position: absolute;
 	top: 535px;
@@ -993,9 +998,9 @@ header a{
 
 .itself-product img{
 	position: absolute;
-	margin-left: -199px;
-	margin-top: 115px;
-	width: 65%;
+	margin-left: -140px;
+	margin-top: 155px;
+	width: 350px;
 	z-index: -1;
 }
 

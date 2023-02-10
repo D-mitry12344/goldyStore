@@ -77,7 +77,7 @@ btnNext.addEventListener("click",function(event){
 		bannerNew.innerHTML=`
 						<p>Суперскидка до 80%</p>
 						<h1>НА ОЖЕРЕЛЬЕ</h1>
-						<img style="margin-top:-321px;" src="img/banner/pendats.png">
+						<img class="bannerThree" src="img/banner/pendats.png">
 						<a href="#">
 							<button>Подробнее</button>
 						</a>
